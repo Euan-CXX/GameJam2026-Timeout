@@ -139,37 +139,5 @@ level5 = Level {
     levelHint = "Only Crystal can press button, try overlapping"
 }
 
-
-
--- level10 :: Level
--- level10 = Level {
---     terrain = Terrain {
---         terrainArrayPos = turnIntoBox (turnIntoWall (makeEmptyGrid 4) (1, 1)) (2, 2),
---         startPos = (0, 0),
---         goalPos = (4 , 4)
---     },
---     dynamicObject = DynamicObject {
---         objectsPos = [((2, 3), Crystal)],
---         playerPosPos = (0, 0)
---     },
---     levelHint = "push Boxes... but it resets"
--- }
-
--- level20 :: Level
--- level20 = Level {
---     terrain = Terrain {
---         terrainArrayPos = turnIntoButton
---             (turnIntoDoor (makeEmptyGrid 5) (4, 1) 1)
---             (1, 4) 1,
---         startPos = (0, 5),
---         goalPos = (5, 0)
---     },
---     dynamicObject = DynamicObject {
---         objectsPos = [((2, 3), Crystal)],
---         playerPosPos = (0, 5)
---     },
---     levelHint = "push Boxes... but it resets"
--- }
-
 allLevels :: [Level]
 allLevels = [level1, level2, level2test, level3, level4, level5]

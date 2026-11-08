@@ -80,7 +80,7 @@ drawTimer t =
         textPicture = color black $ scale 0.2 0.2 $ text timerText
         centeredText = translate (-20) (-15) textPicture
         timerUI = pictures [background, centeredText]
-    in translate 0 250 timerUI -- Moves the whole UI to the top center
+    in translate 0 250 timerUI 
 
 drawLevelHint :: String -> Picture
 drawLevelHint hint = 

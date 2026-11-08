@@ -149,7 +149,7 @@ checkButton id newPos world =
         total = map fst (objectsPos (dynamicObject lvl)) ++ 
             [playerPosPos (dynamicObject lvl)]
     in case findButtonById id arr of 
-        Nothing -> world -- Safely do nothing if the button doesn't exist
+        Nothing -> world 
         Just buttonPos ->
             if isColliding total buttonPos 
             then 
