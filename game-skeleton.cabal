@@ -1,0 +1,26 @@
+cabal-version:      2.4
+name:               game-skeleton
+version:            0.1.0.0
+synopsis:           A skeleton for a Haskell game
+build-type:         Simple
+
+executable game-skeleton
+    main-is:          Main.hs
+    hs-source-dirs:   src
+    other-modules:    TimeOut.Types
+                    , TimeOut.Levels
+                    , TimeOut.Render
+                    , TimeOut.Input
+                    , TimeOut.Dir
+                    , TimeOut.Logic
+    default-language: Haskell2010
+    ghc-options:      -threaded -rtsopts -with-rtsopts=-N
+    build-depends:    base >=4.14 && <5
+                    , gloss
+                    , gloss-raster
+                    , vector
+                    , apecs
+                    , apecs-gloss
+                    , linear   
+                    , transformers
+                    , array
